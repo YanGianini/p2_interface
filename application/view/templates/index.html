@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="logo_area">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="" id="img_logo">
+        </div>
+
+        <div id="form_area">
+            <form action="">
+                <input type="text" name="search" id="search" placeholder="O que está procurando?">
+            </form>
+            <img src="{{ url_for('static', filename='img/lupa.png') }}" alt="" class="img_header">
+        </div>
+
+        <div id="personal_area">
+            <div id="login_area">
+                <div>
+                    <img src="{{ url_for('static', filename='img/icon_person.png') }}" alt="" class="img_header">
+                    <a href="">Minha conta</a>
+                </div>
+                <div>
+                    <img src="{{ url_for('static', filename='img/cart.png') }}" alt="" class="img_header">
+                    1
+                </div>
+            </div>
+
+            <div id="lang_area">
+                <img src="{{ url_for('static', filename='img/br.png') }}" alt="" class="img_flag">
+                <img src="{{ url_for('static', filename='img/es.png') }}" alt="" class="img_flag">
+                <img src="{{ url_for('static', filename='img/gb.png') }}" alt="" class="img_flag">
+            </div>
+        </div>
+
+    </header>
+    <div id="slide">
+        <div>
+            <p>slide maneiro</p>
+        </div>
+        <div>
+            corzinha cria
+        </div>
+    </div>
+    <div id="produto">
+        tenis chiq
+    </div>  
+    <footer>
+        pack do pezinho
+    </footer>  
+</body>
+</html>
