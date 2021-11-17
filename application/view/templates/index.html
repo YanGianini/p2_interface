@@ -71,10 +71,10 @@
         <h1 id="footer_h">Localização</h1>
 
         <div id="retangulo"></div>
-        
+
         <div id="conteudo">
             <div class="contact">
-                <p>São Paulo</p>
+                <p class="text_maior">São Paulo</p>
                 <p>Rua do Rócio, 423/1801</p>
                 <p>Vila Olímpia - SP</p>
                 <p>04552-000</p>
@@ -82,14 +82,28 @@
             </div>
 
             <div class="contact">
-                <p>Rio de Janeiro</p>
+                <p class="text_maior">Rio de Janeiro</p>
                 <p>Vol. da Pátria, 301/702</p>
                 <p>Botafogo - RJ</p>
                 <p>22270-000</p>
                 <p>+55 21 3333 3333</p>
             </div>
 
+            <div id="em_contato">
+                <button class='bt_cont'>
+                    <img src="{{ url_for('static', filename='img/mail.png') }}" alt="" class="img_ft">
+                    ENTRE EM CONTATO
+                </button>
+                
+                <button class='bt_cont'>
+                    <img src="{{ url_for('static', filename='img/phone.png') }}" alt="" class="img_ft">
+                    FALE COM O NOSSO CONSULTOR ONLINE
+                </button>
 
+            </div>
+            <div id="by">
+                <img src="{{ url_for('static', filename='img/by.png') }}" alt="">
+            </div>
 
 
         </div>
