@@ -50,20 +50,49 @@
         </div>
     </div>
     <div id="produto">
-        <h1>Produtos</h1>
-        <div id="lista_produto">
-            <div id="card_produto">
-                <img src="" alt="">
-                <p>nome do tenis</p>
-                <div>estrelas</div>
-                <div>por R$ preço</div>
-                <div>ou em Xx de R$ parcelas</div>
-                <button>comprar</button>
+        <p id="produto_header">Produtos</p>
+        <div id="slide_prod">
+            <img src="{{ url_for('static', filename='img/black_left.png') }}" alt="" class="arrow_prod">
+            <div id="lista_produto">
+                <div id="card_produto">
+                    <img src="{{ url_for('static', filename='img/tenis.png') }}" alt="" id="img_compra">
+                    <h2>NOME DO TENIS</h2>
+                    <div>estrelas</div>
+                    <h4>de R$ xxx</h4>
+                    <h1>por R$ preço</h1>
+                    <h3>ou em Xx de R$ parcelas</h3>
+                    <button id="button_compra"><img src="{{ url_for('static', filename='img/cart_compra.png') }}" alt="" class="img_header"> COMPRAR</button>
+                </div>
             </div>
+            <img src="{{ url_for('static', filename='img/black_right.png') }}" alt="" class="arrow_prod">
         </div>
     </div>  
     <footer>
-        pack do pezinho
+        <h1 id="footer_h">Localização</h1>
+
+        <div id="retangulo"></div>
+        
+        <div id="conteudo">
+            <div class="contact">
+                <p>São Paulo</p>
+                <p>Rua do Rócio, 423/1801</p>
+                <p>Vila Olímpia - SP</p>
+                <p>04552-000</p>
+                <p>+55 11  3333 3333</p>
+            </div>
+
+            <div class="contact">
+                <p>Rio de Janeiro</p>
+                <p>Vol. da Pátria, 301/702</p>
+                <p>Botafogo - RJ</p>
+                <p>22270-000</p>
+                <p>+55 21 3333 3333</p>
+            </div>
+
+
+
+
+        </div>
     </footer>  
 </body>
 </html>

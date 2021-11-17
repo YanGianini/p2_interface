@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
 @media screen and (min-width:360px){
     body {
-        background-color: aqua;
+        background-color: #2EC4B6;
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -66,6 +69,7 @@
     #personal_area a {
         text-decoration: none;
         color: black;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     #login_area {
@@ -127,6 +131,7 @@
         color: white;
         font-size: 45px;
         width: 50%;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     div#produto{
@@ -134,7 +139,13 @@
         height: 474px;
     }
     
-    #lista_produto{
+    #produto_header{
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 15%;
+    }
+
+    #slide_prod{
         margin-left: 10%;
         width: 80%;
         height: 80%;
@@ -142,19 +153,113 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: tomato;
+    }
+
+    .arrow_prod {
+        height: 22px;
+        width: 14px;
+    }
+
+    #lista_produto{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #card_produto {
         height: 353px;
         width: 216px;
-        background-color: turquoise;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #img_compra {
+        width: 180px;
+        height: 150px;
+    }
+
+    #card_produto h1 {
+        margin: 0;
+        font-size: 18px;
+        color: #2EC4B6;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    #card_produto h2 {
+        margin: 15px 0 0 0;
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        text-decoration: none;
+        color: #7A7A7A;
+    }
+
+    #card_produto h3 {
+        margin: 0;
+        font-size: 11px;
+        font-family: 'Ubuntu', sans-serif;
+        text-decoration: none;
+        color: #7A7A7A;
+    }
+    #card_produto h4 {
+        margin: 0;
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        text-decoration: none;
+        color: #7A7A7A;
+    }
+
+    #button_compra {
+        background-color: #2EC4B6;
+        border-style: none;
+        height: 32px;
+        width: 125px;
+        margin: 5px;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     footer {
         background-color: #011627;
         height: 213px;
-    } 
+    }
+  
+    footer #conteudo{
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+        flex-direction: row; 
+    }  
+
+    #footer_h{
+        margin-left: 15%;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #retangulo {
+        width: 44px;
+        height: 4px;
+        background-color: #FF9F1C;
+        margin-left: 15%;
+    }
+
+    .contact{
+        width: 15%;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:360px){
