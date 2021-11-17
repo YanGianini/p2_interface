@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Document</title>
 </head>
-<body>
+<body onload="get_produto()">
     <header>
         <div id="logo_area">
             <img src="{{ url_for('static', filename='img/logo.png') }}" alt="" id="img_logo">
@@ -105,8 +105,20 @@
                 <img src="{{ url_for('static', filename='img/by.png') }}" alt="">
             </div>
 
-
         </div>
     </footer>  
 </body>
+    <script>
+        function get_produto() {
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", "/produtos");
+            xhr.send(null);
+            xhr.onreadystatechange = function() {
+                if(xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById("slide_prod").innerHTML = xhr.response;
+                }
+            }
+            return false;
+        }
+    </script>
 </html>

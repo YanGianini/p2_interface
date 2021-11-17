@@ -1,0 +1,15 @@
+<img src="{{ url_for('static', filename='img/black_left.png') }}" alt="" class="arrow_prod">
+    <div id="lista_produto">
+        {% for produto in lista_produto %}
+        <div id="card_produto">
+            <img src="{{ produto.get_image() }}" alt="" id="img_compra">
+            <h2>{{produto.get_name()}}</h2>
+            <div>estrelas</div>
+            <h4>de R${{produto.get_oldPrice()}}</h4>
+            <h1>por R${{produto.get_price()}}</h1>
+            <h3>ou em {{produto.get_count()}} de R${{produto.get_value()}}</h3>
+            <button id="button_compra"><img src="{{ url_for('static', filename='img/cart_compra.png') }}" alt="" class="img_header"> COMPRAR</button>
+        </div>
+        {% endfor %}
+    </div>
+<img src="{{ url_for('static', filename='img/black_right.png') }}" alt="" class="arrow_prod">
