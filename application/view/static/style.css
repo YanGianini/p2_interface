@@ -176,6 +176,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+    }
+
+    #card_produto:hover {
+        background-color: #ececec;
+        transition: 0.5s ease;
     }
 
     #img_compra {
@@ -303,32 +309,7 @@
 }
 
 @media screen and (max-width:360px){
-    body {
-        background-color: aqua;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-    
-    header {
-        background-color: white;
-        height: 80px;
-    }
-    
-    div#slide{
-        background-color: blue;
-        height: 191px;
-    }
-    
-    div#produto{
-        background-color: white;
-        height: 360px;
-    }
-    
-    footer {
-        background-color: #011627;
-        height: 386px;
-    }
+   
 }
 
 
